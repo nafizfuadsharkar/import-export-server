@@ -85,7 +85,7 @@ async function run() {
       res.send(result);
     });
 
-    // product ke update kora
+    // product ke update kora put diye
     app.put("/product/:id", async (req, res) => {
       const id = req.params.id;
       const data = req.body;
