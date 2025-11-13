@@ -64,6 +64,7 @@ async function run() {
       res.send(result);
     });
 
+    // product add kora 
     app.post("/products", async (req, res) => {
       const newProduct = req.body;
       const result = await productsCollection.insertOne(newProduct);
