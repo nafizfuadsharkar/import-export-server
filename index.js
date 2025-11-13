@@ -47,7 +47,7 @@ async function run() {
       res.send(result);
     });
 
-    //get 6 most recent product
+    //get 6 most recent product show
     app.get("/recent-products", async (req, res) => {
       const result = await productsCollection
         .find()
