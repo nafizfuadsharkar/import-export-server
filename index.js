@@ -117,7 +117,7 @@ async function run() {
       res.send(result);
     });
 
-    //get my imports with email:
+    //get my imports with email
     app.get("/my-imported", async (req, res) => {
       const email = req.query.email;
       const result = await importedCollection
