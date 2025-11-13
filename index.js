@@ -70,6 +70,7 @@ async function run() {
       res.send(result);
     });
 
+    // upadte product 
     app.patch("/products/:id", async (req, res) => {
       const id = req.params.id;
       const updateproduct = req.body;
