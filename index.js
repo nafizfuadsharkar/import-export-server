@@ -101,7 +101,7 @@ async function run() {
       });
     });
 
-    // delete korbe ekta full product ke
+    // delete korbe ekta full product 
     app.delete("/products/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
